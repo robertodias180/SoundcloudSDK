@@ -18,7 +18,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
   s.ios.dependency 'KeychainAccess', '~> 3.0'
-  s.ios.dependency '1PasswordExtension', '~> 1.8.3'
 
   s.osx.deployment_target = '10.10'
   s.osx.dependency 'KeychainAccess', '~> 3.0'

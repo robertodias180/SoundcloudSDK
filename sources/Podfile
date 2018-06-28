@@ -5,7 +5,6 @@ target 'Soundcloud iOS' do
     platform :ios, '8.0'
 
     pod 'KeychainAccess', '~> 3.0'
-    pod '1PasswordExtension', '~> 1.8.3'
 end
 
 target 'Soundcloud OSX' do
@@ -16,12 +15,10 @@ end
 
 target 'SoundcloudTests' do
     pod 'KeychainAccess', '~> 3.0'
-    pod '1PasswordExtension', '~> 1.8.3'
 end
 
 target 'SoundcloudAppTest' do
     pod 'KeychainAccess', '~> 3.0'
-    pod '1PasswordExtension', '~> 1.8.3'
 end
 
 

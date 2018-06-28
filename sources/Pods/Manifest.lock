@@ -1,15 +1,16 @@
 PODS:
-  - 1PasswordExtension (1.8.3)
   - KeychainAccess (3.0.1)
 
 DEPENDENCIES:
-  - 1PasswordExtension (~> 1.8.3)
   - KeychainAccess (~> 3.0)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - KeychainAccess
+
 SPEC CHECKSUMS:
-  1PasswordExtension: 8757dc3302353731dd3e678e63b5023a708783cb
   KeychainAccess: 017ea25e313a49eda10bb19b0bb0760fb1edfe1a
 
-PODFILE CHECKSUM: 8b4bdda45da2b21a64957a8a4432411f528ddb28
+PODFILE CHECKSUM: 1ea4e1105d9eb516447122846fe4f94d6b488c25
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.5.3
