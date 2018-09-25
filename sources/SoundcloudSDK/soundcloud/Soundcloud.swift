@@ -40,9 +40,29 @@ public var redirectURI: String? {
     }
 }
 
+/// Your Soundcloud scope value
+public var scope: String? {
+    get {
+        return SoundcloudClient.scope
+    }
+    set(scope) {
+        SoundcloudClient.scope = scope
+    }
+}
+
+/// Your Soundcloud custom keys
+public var customKeys: [String: String]? {
+    get {
+        return SoundcloudClient.customKeys
+    }
+    set(customKeys) {
+        SoundcloudClient.customKeys = customKeys
+    }
+}
+
 /**
  Convience method to set Soundcloud app credentials
-
+ 
  - parameter clientIdentifier:  Your Soundcloud app client identifier
  - parameter clientSecret:      Your Soundcloud app client secret
  - parameter redirectURI:       Your Soundcloud redirect URI
@@ -60,7 +80,7 @@ public func configure(clientIdentifier: String?, clientSecret: String?, redirect
 /**
  Logs a user in. This method will present an UIViewController over `displayViewController`
  that will load a web view so that user is available to log in
-
+ 
  - parameter displayViewController: An UIViewController that is in the view hierarchy
  - parameter completion:            The closure that will be called when the user is logged in or upon error
  */
@@ -89,7 +109,7 @@ public typealias ResolveResponse = (users: [User]?, tracks: [Track]?, playlist: 
 
 /**
  Resolve allows you to lookup and access API resources when you only know the SoundCloud.com URL.
-
+ 
  - parameter URI:        The URI to lookup
  - parameter completion: The closure that will be called when the result is ready or upon error
  */
